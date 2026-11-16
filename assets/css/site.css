@@ -247,8 +247,6 @@ dl {
 .brand img {
   width: 78px;
   background: none;
-  /* drops the black background of the brass logo photo */
-  mix-blend-mode: lighten;
 }
 
 .brand-text {
@@ -456,6 +454,8 @@ dl {
   width: 100%;
   aspect-ratio: 5 / 4;
   object-fit: cover;
+  /* keep the shunter in frame when the sides are trimmed */
+  object-position: 62% 50%;
   border-radius: var(--radius);
   box-shadow: 0 30px 60px -24px rgb(0 0 0 / 0.7);
 }
@@ -1415,7 +1415,6 @@ a.ticket:hover {
   width: 120px;
   margin-bottom: 1rem;
   background: none;
-  mix-blend-mode: lighten;
 }
 
 .footer-brand p {
